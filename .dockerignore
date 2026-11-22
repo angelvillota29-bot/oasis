@@ -1,0 +1,6 @@
+.git
+worker
+node_modules
+README.md
+package.json
+.gitignore
