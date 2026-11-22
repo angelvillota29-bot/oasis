@@ -1,0 +1,11 @@
+{
+  "name": "oasis",
+  "private": true,
+  "type": "module",
+  "description": "Página de reservas para Oasis, estudio de uñas (sitio estático + Worker de Cloudflare con aviso por Telegram).",
+  "scripts": {
+    "test": "node worker/test/worker.test.mjs",
+    "servir": "python -m http.server 5180",
+    "worker:deploy": "cd worker && npx wrangler deploy"
+  }
+}

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oasis · Estudio de uñas y reservas en línea</title>
+  <meta name="description" content="Oasis, estudio de uñas: manicure, semipermanente, acrílicas, polygel y pedicure spa. Reserva tu cita en línea en un minuto.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Oasis · Estudio de uñas">
+  <meta property="og:description" content="Uñas de diseño y una cita sin afán. Reserva en línea en un minuto.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- Iconos (trazo uniforme de 1.7) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-atras" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 3v4m8-4v4M3.5 10h17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8 7.5 9.5 4.4-1.5 7.5-4.9 7.5-9.5V6L12 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m8.8 12 2.4 2.4 4-4.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chispa" viewBox="0 0 24 24"><path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.5l-1.9-5.7-5.6-1.9L10.1 9 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M19 3v3m-1.5-1.5h3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-persona" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.7" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4.5 20c.9-3.6 3.9-5.5 7.5-5.5s6.6 1.9 7.5 5.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-descarga" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19.5h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <!-- iconos de servicios -->
+    <symbol id="s-hoja" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-14 0 9-5 15-13 15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5 19c3-4 6-7 10-9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="s-gota" viewBox="0 0 24 24"><path d="M12 3.5c3.6 4.4 6 7.4 6 10.6A6 6 0 0 1 6 14.1c0-3.2 2.4-6.2 6-10.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.2 2.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="s-diamante" viewBox="0 0 24 24"><path d="M6.5 4.5h11l3.5 5-9 10.5L3 9.5l3.5-5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 9.5h18M9.5 4.5 8 9.5l4 10.5 4-10.5-1.5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="s-pluma" viewBox="0 0 24 24"><path d="M20 4c-8 0-13 5-13 11v2.5h2.5c6 0 10.500-5 10.500-13.500Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 20.500 14 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="s-ola" viewBox="0 0 24 24"><path d="M3 9c2.200 0 2.200-2 4.500-2S9.700 9 12 9s2.200-2 4.500-2S18.800 9 21 9M3 14c2.200 0 2.200-2 4.500-2s2.200 2 4.500 2 2.200-2 4.500-2 2.200 2 4.500 2M3 19c2.200 0 2.200-2 4.500-2s2.200 2 4.500 2 2.200-2 4.500-2 2.200 2 4.500 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="s-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v2.500M12 18.500V21M3 12h2.500M18.500 12H21M5.600 5.600l1.800 1.800M16.600 16.600l1.800 1.800M5.600 18.400l1.800-1.800M16.600 7.400l1.800-1.800" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <div class="wrap cabecera-in">
+    <a class="marca" href="#inicio" aria-label="Oasis, ir al inicio">
+      <svg class="marca-icono" viewBox="0 0 40 40" aria-hidden="true"><path d="M5 36V19a15 15 0 0 1 30 0v17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="21" r="5.500" fill="var(--rosa)"/><path d="M9 31c3.500 0 3.500-2 7-2s3.500 2 7 2 3.500-2 7-2" fill="none" stroke="var(--salvia)" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="marca-texto">Oasis<small>Estudio de uñas</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#disenos">Diseños</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="btn btn-sm nav-cta" href="#reservar">Reservar cita</a>
+    </nav>
+    <a class="btn btn-sm cabecera-cta" href="#reservar">Reservar</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ===== Inicio ===== -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-in">
+      <div class="hero-texto">
+        <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-chispa"/></svg> Estudio de uñas · Con cita previa</p>
+        <h1>Tus manos merecen un <em>oasis</em>.</h1>
+        <p class="lead">Uñas de diseño, acabados impecables y una cita sin afán. Reserva en línea en un minuto, a cualquier hora, y nosotras te confirmamos tu cita.</p>
+        <div class="hero-acciones">
+          <a class="btn btn-grande" href="#reservar">Reservar mi cita <svg class="ic" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          <a class="btn btn-claro btn-grande" href="#servicios">Ver servicios</a>
+        </div>
+        <ul class="hero-datos" aria-label="Lo que nos distingue">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-persona"/></svg> Una clienta a la vez</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-escudo"/></svg> Material esterilizado</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-calendario"/></svg> Reservas 24 horas</li>
+        </ul>
+      </div>
+      <div class="hero-arte" aria-hidden="true">
+        <div class="arco">
+          <div class="sol"></div>
+          <svg class="palma palma-i" viewBox="0 0 120 220"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M60 220C58 160 62 110 70 60"/><path d="M70 60C48 56 30 66 14 90M70 60C52 44 34 42 12 50M70 60C84 44 104 44 116 56M70 60C90 62 104 76 112 98"/><path d="M70 60C66 40 68 22 76 6"/></g></svg>
+          <svg class="palma palma-d" viewBox="0 0 120 220"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M60 220C62 170 58 120 50 70"/><path d="M50 70C72 66 90 76 106 100M50 70C68 54 86 52 108 60M50 70C36 54 16 54 4 66M50 70C30 72 16 86 8 108"/><path d="M50 70C54 50 52 32 44 16"/></g></svg>
+          <div class="hero-nails" id="heroNails"></div>
+          <div class="agua"></div>
+        </div>
+        <span class="chip chip-1"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Cita confirmada</span>
+        <span class="chip chip-2"><svg class="ic" aria-hidden="true"><use href="#i-reloj"/></svg> Reserva en 1 minuto</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta-pista">
+      <span>Semipermanente</span><i></i><span>Acrílicas</span><i></i><span>Polygel</span><i></i><span>Nail art</span><i></i><span>Pedicure spa</span><i></i><span>Efecto espejo</span><i></i>
+      <span>Semipermanente</span><i></i><span>Acrílicas</span><i></i><span>Polygel</span><i></i><span>Nail art</span><i></i><span>Pedicure spa</span><i></i><span>Efecto espejo</span><i></i>
+    </div>
+  </div>
+
+  <!-- ===== Servicios ===== -->
+  <section class="seccion" id="servicios">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Servicios</p>
+        <h2>Cuidado para tus manos <em>y tus pies</em></h2>
+        <p>Elige tu servicio y agrégale detalles al reservar. Los precios son de referencia; el valor final se confirma contigo.</p>
+      </header>
+      <div class="servicios" id="listaServicios"></div>
+    </div>
+  </section>
+
+  <!-- ===== Diseños ===== -->
+  <section class="seccion seccion-arena" id="disenos">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Inspiración</p>
+        <h2>Acabados que <em>enamoran</em></h2>
+        <p>Algunas ideas para empezar. Cada diseño se crea a tu medida: trae tu referencia o déjate aconsejar.</p>
+      </header>
+      <div class="disenos" id="galeria"></div>
+    </div>
+  </section>
+
+  <!-- ===== Experiencia ===== -->
+  <section class="seccion" id="experiencia">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">La experiencia Oasis</p>
+        <h2>Una pausa en tu día, <em>sin afanes</em></h2>
+      </header>
+      <div class="pilares">
+        <article class="pilar reveal"><svg class="ic ic-xl" aria-hidden="true"><use href="#i-persona"/></svg><h3>Atención personalizada</h3><p>Una sola clienta a la vez: tiempo completo para tu diseño y para escucharte.</p></article>
+        <article class="pilar reveal"><svg class="ic ic-xl" aria-hidden="true"><use href="#i-escudo"/></svg><h3>Higiene primero</h3><p>Instrumentos esterilizados y limas nuevas para cada cita. Tu cuidado es lo importante.</p></article>
+        <article class="pilar reveal"><svg class="ic ic-xl" aria-hidden="true"><use href="#i-chispa"/></svg><h3>Productos de calidad</h3><p>Geles, esmaltes y bases profesionales para que el color dure y tus uñas se mantengan sanas.</p></article>
+        <article class="pilar reveal"><svg class="ic ic-xl" aria-hidden="true"><use href="#i-calendario"/></svg><h3>Reservas en línea</h3><p>Eliges día y hora desde tu celular, a cualquier hora, sin esperar respuestas.</p></article>
+      </div>
+
+      <ol class="pasos reveal" aria-label="Cómo reservar">
+        <li><b>1</b><div><h3>Elige tu servicio</h3><p>Con los detalles que quieras sumar.</p></div></li>
+        <li><b>2</b><div><h3>Escoge día y hora</h3><p>Solo ves los horarios realmente libres.</p></div></li>
+        <li><b>3</b><div><h3>Recibe tu confirmación</h3><p>Oasis revisa tu cita y te escribe para confirmarla.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Reservar ===== -->
+  <section class="seccion reservar" id="reservar">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Reservas en línea</p>
+        <h2>Elige tu <em>momento</em></h2>
+        <p>Tarda menos de un minuto. No necesitas crear cuenta.</p>
+      </header>
+
+      <div class="book">
+        <div class="book-main card" id="bookMain">
+          <ol class="stepper" id="stepper" aria-label="Pasos de la reserva">
+            <li data-paso="1"><span>1</span> Servicio</li>
+            <li data-paso="2"><span>2</span> Día y hora</li>
+            <li data-paso="3"><span>3</span> Tus datos</li>
+          </ol>
+
+          <form id="form" novalidate autocomplete="on">
+            <!-- Paso 1 -->
+            <section class="paso" data-paso="1" aria-labelledby="t1">
+              <h3 id="t1" tabindex="-1">¿Qué te hacemos?</h3>
+              <fieldset class="opciones" id="opcServicios"><legend class="solo-lector">Servicio</legend></fieldset>
+              <h4 class="sub">¿Quieres sumar algo? <span>(opcional)</span></h4>
+              <fieldset class="extras" id="opcExtras"><legend class="solo-lector">Extras</legend></fieldset>
+              <p class="error" id="err1" role="alert" hidden></p>
+            </section>
+
+            <!-- Paso 2 -->
+            <section class="paso" data-paso="2" aria-labelledby="t2" hidden>
+              <h3 id="t2" tabindex="-1">Elige el día y la hora</h3>
+              <div class="cal-cab"><strong id="calMes"></strong></div>
+              <div class="cal" id="cal" role="group" aria-label="Días disponibles"></div>
+              <h4 class="sub" id="horasTitulo">Horarios disponibles</h4>
+              <div class="horas" id="horas" role="group" aria-labelledby="horasTitulo"></div>
+              <p class="estado" id="estadoHoras" role="status" aria-live="polite"></p>
+              <p class="error" id="err2" role="alert" hidden></p>
+            </section>
+
+            <!-- Paso 3 -->
+            <section class="paso" data-paso="3" aria-labelledby="t3" hidden>
+              <h3 id="t3" tabindex="-1">Tus datos</h3>
+              <div class="resumen-errores" id="resErrores" role="alert" tabindex="-1" hidden></div>
+              <div class="campo">
+                <label for="nombre">Tu nombre <span class="req" aria-hidden="true">*</span></label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" maxlength="60" required aria-describedby="e-nombre">
+                <p class="error-campo" id="e-nombre" hidden></p>
+              </div>
+              <div class="campo">
+                <label for="contacto">Tu WhatsApp o celular <span class="req" aria-hidden="true">*</span></label>
+                <input id="contacto" name="contacto" type="tel" inputmode="tel" autocomplete="tel" maxlength="30" placeholder="300 123 4567" required aria-describedby="a-contacto e-contacto">
+                <p class="ayuda" id="a-contacto">Así te escribimos para confirmar tu cita.</p>
+                <p class="error-campo" id="e-contacto" hidden></p>
+              </div>
+              <div class="campo">
+                <label for="notas">¿Algo que debamos saber? <span class="opc">(opcional)</span></label>
+                <textarea id="notas" name="notas" rows="3" maxlength="300" placeholder="Tu diseño soñado, alergias, retiro de material…"></textarea>
+              </div>
+              <input class="trampa" type="text" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <p class="error" id="err3" role="alert" hidden></p>
+            </section>
+
+            <div class="acciones">
+              <button type="button" class="btn btn-claro" id="btnAtras" hidden><svg class="ic" aria-hidden="true"><use href="#i-atras"/></svg> Atrás</button>
+              <button type="submit" class="btn" id="btnSiguiente">Continuar <svg class="ic" aria-hidden="true"><use href="#i-flecha"/></svg></button>
+            </div>
+          </form>
+
+          <!-- Éxito -->
+          <div class="exito" id="exito" hidden>
+            <div class="exito-icono"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
+            <h3 id="tExito" tabindex="-1">¡Reserva recibida!</h3>
+            <p class="exito-sub" id="exitoSub"></p>
+            <dl class="exito-datos" id="exitoDatos"></dl>
+            <div class="exito-acciones">
+              <button type="button" class="btn btn-claro" id="btnIcs"><svg class="ic" aria-hidden="true"><use href="#i-descarga"/></svg> Guardar en mi calendario</button>
+              <button type="button" class="btn btn-fantasma" id="btnOtra">Hacer otra reserva</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="book-resumen card" aria-label="Resumen de tu reserva">
+          <h3>Tu reserva</h3>
+          <dl class="resumen" id="resumen"></dl>
+          <p class="resumen-nota"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Oasis revisa tu reserva y la confirma contigo.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Preguntas ===== -->
+  <section class="seccion seccion-arena" id="preguntas">
+    <div class="wrap wrap-estrecho">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Lo que más nos <em>preguntan</em></h2>
+      </header>
+      <div class="faq reveal">
+        <details><summary>¿Cómo sé que mi cita quedó confirmada?</summary><p>Apenas Oasis revisa tu reserva te escribe a tu WhatsApp o celular para confirmarla.</p></details>
+        <details><summary>¿Puedo cambiar o cancelar mi cita?</summary><p>Claro. Avísanos con al menos 12 horas de anticipación y te ayudamos a reprogramar sin costo.</p></details>
+        <details><summary>¿Cómo se paga?</summary><p>Se paga al terminar tu servicio, en efectivo o por transferencia. Para diseños especiales podemos pedir un pequeño abono.</p></details>
+        <details><summary>¿Tengo que retirar mis uñas anteriores antes de ir?</summary><p>No es necesario: puedes sumar el retiro de material a tu reserva y nosotras nos encargamos con el mayor cuidado.</p></details>
+        <details><summary>¿Puedo llevar una referencia de diseño?</summary><p>¡Sí! Escríbela o cuéntala en las notas al reservar y la preparamos a tu medida.</p></details>
+        <details><summary>¿Dónde queda el estudio?</summary><p>Te enviamos la dirección exacta y cómo llegar junto con la confirmación de tu cita.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="wrap pie-in">
+    <div class="pie-marca">
+      <a class="marca" href="#inicio" aria-label="Oasis, ir al inicio">
+        <svg class="marca-icono" viewBox="0 0 40 40" aria-hidden="true"><path d="M5 36V19a15 15 0 0 1 30 0v17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="21" r="5.500" fill="var(--rosa)"/><path d="M9 31c3.500 0 3.500-2 7-2s3.500 2 7 2 3.500-2 7-2" fill="none" stroke="var(--salvia)" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="marca-texto">Oasis<small>Estudio de uñas</small></span>
+      </a>
+      <p>Uñas de diseño con cita previa y reservas en línea.</p>
+    </div>
+    <div>
+      <h3>Horario</h3>
+      <ul class="pie-lista" id="pieHorario"></ul>
+    </div>
+    <div>
+      <h3>Reserva</h3>
+      <ul class="pie-lista">
+        <li><a href="#reservar">Reservar en línea</a></li>
+        <li><a href="#servicios">Ver servicios</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap pie-fin">
+    <span>© <span id="anio"></span> Oasis · Todos los derechos reservados</span>
+    <span>Página y reservas creadas por <a href="https://angel-automatizaciones.lovable.app/" rel="noopener">Ángel Automatizaciones</a></span>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

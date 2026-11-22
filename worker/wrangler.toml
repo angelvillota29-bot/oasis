@@ -1,0 +1,21 @@
+name = "oasis-reservas"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# 1) Crea el almacén:   npx wrangler kv namespace create RESERVAS
+# 2) Pega aquí el "id" que te devuelve:
+[[kv_namespaces]]
+binding = "RESERVAS"
+id = "REEMPLAZAR_CON_EL_ID_DEL_KV"
+
+[vars]
+# Dirección de la página (sin barra final). Puedes poner varias separadas por coma.
+ALLOWED_ORIGIN = "https://angelvillota29-bot.github.io"
+# Usuario del bot en Telegram, sin @ (el que te dio BotFather). Sirve para el enlace
+# "recibir confirmación por Telegram" que ve la clienta.
+TELEGRAM_BOT_USUARIO = ""
+
+# Secretos (NO van aquí; se cargan con `npx wrangler secret put NOMBRE`):
+#   TELEGRAM_BOT_TOKEN  token que da BotFather
+#   TELEGRAM_CHAT_ID    chat de Oasis (se obtiene escribiéndole /start al bot)
+#   WEBHOOK_SECRET      una clave larga inventada por ti (letras y números)
